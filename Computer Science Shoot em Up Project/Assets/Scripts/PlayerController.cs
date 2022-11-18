@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     float vertical;
 
     bool shoot;
+    float bulletTimer;
 
     // Start is called before the first frame update
     void Start()
@@ -29,11 +30,22 @@ public class PlayerController : MonoBehaviour
         shoot = Input.GetKey(KeyCode.Z);
         if (shoot)
         {
-            foreach(Shooter shoot in shooter)
+            foreach (Shooter shoot in shooter)
             {
                 shoot.Shoot();
             }
         }
+     //   if (shoot)
+      //      {
+     //           bulletTimer += Time.deltaTime;
+      //          if (bulletTimer > 0.5f) 
+     //           { 
+     //               shoot.Shoot(); 
+     //               bulletTimer = 0; 
+     //           }
+     // :(
+     //       }
+        
     }
 
     void FixedUpdate()

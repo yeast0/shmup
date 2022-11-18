@@ -838,6 +838,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1244324697969600714, guid: 97229b328ccade448908ec776e563ba7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1244324697969600714, guid: 97229b328ccade448908ec776e563ba7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1244324697969600714, guid: 97229b328ccade448908ec776e563ba7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1244324698247983864, guid: 97229b328ccade448908ec776e563ba7, type: 3}
       propertyPath: m_Name
       value: playerProjectile
@@ -848,15 +860,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1244324698247983867, guid: 97229b328ccade448908ec776e563ba7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.11859726
+      value: -3.1
       objectReference: {fileID: 0}
     - target: {fileID: 1244324698247983867, guid: 97229b328ccade448908ec776e563ba7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.36174366
+      value: -1.53
       objectReference: {fileID: 0}
     - target: {fileID: 1244324698247983867, guid: 97229b328ccade448908ec776e563ba7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.55635476
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1244324698247983867, guid: 97229b328ccade448908ec776e563ba7, type: 3}
       propertyPath: m_LocalRotation.w
