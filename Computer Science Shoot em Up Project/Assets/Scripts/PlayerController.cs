@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    Shooter[] shooter;
+
     Rigidbody2D rigidbody2d;
     float horizontal;
     float vertical;
 
+    bool shoot;
+
     // Start is called before the first frame update
     void Start()
     {
+        shooter = transform.GetComponentsInChildren<Shooter>();
+
         rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
@@ -19,6 +25,15 @@ public class PlayerController : MonoBehaviour
     {
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
+
+        shoot = Input.GetKey(KeyCode.Z);
+        if (shoot)
+        {
+            foreach(Shooter shoot in shooter)
+            {
+                shoot.Shoot();
+            }
+        }
     }
 
     void FixedUpdate()
