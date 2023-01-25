@@ -13,6 +13,17 @@ public class PlayerController : MonoBehaviour
     bool shoot;
     float bulletTimer;
 
+
+
+    private IEnumerator waitToFire()
+    {
+        foreach (Shooter shoot in shooter)
+        {
+            shoot.Shoot();
+            yield return new WaitForSecondsRealtime(0.2f);
+        }
+
+    }
     // Start is called before the first frame update
     void Start()
 
@@ -37,13 +48,12 @@ public class PlayerController : MonoBehaviour
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
 
-        shoot = Input.GetKey(KeyCode.Z);
+        shoot = Input.GetKeyDown(KeyCode.Z);
         if (shoot)
         {
-            foreach (Shooter shoot in shooter)
-            {
-                shoot.Shoot();
-            }
+            
+            StartCoroutine(waitToFire());
+           
         }
      //   if (shoot)
       //      {
