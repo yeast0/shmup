@@ -15,7 +15,17 @@ public class PlayerController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
+
+
+
     {
+
+    
+        GameObject player = GameObject.FindGameObjectWithTag("nocollide");
+        Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+  
+
+
         shooter = transform.GetComponentsInChildren<Shooter>();
 
         rigidbody2d = GetComponent<Rigidbody2D>();
