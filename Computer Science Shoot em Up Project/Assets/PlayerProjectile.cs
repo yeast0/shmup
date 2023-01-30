@@ -9,17 +9,20 @@ public class PlayerProjectile : MonoBehaviour
     // projectile speed
 
     public Vector2 velocity;
+    public bool isEnemy = true;
 
     // Start is called before the first frame update
     void Start()
     {
         Destroy(gameObject, 3);
+        // destroy projectile after 3 seconds
     }
 
     // Update is called once per frame
     void Update()
     {
         velocity = direction * speed;
+        // velocity is direction times speed
     }
 
 

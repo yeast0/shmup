@@ -76,4 +76,22 @@ public class PlayerController : MonoBehaviour
 
         rigidbody2d.MovePosition(position);
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        PlayerProjectile projectile = collision.GetComponent<PlayerProjectile>();
+        if (projectile != null)
+        {
+            if (projectile.isEnemy)
+            {
+                Destroy(gameObject);
+            }
+        }
+
+        destructable destructable = collision.GetComponent<destructable>();
+        if (destructable != null)
+        {
+            Destroy(gameObject);
+           
+        }
+    }
 }
