@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     Shooter[] shooter;
@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rigidbody2d;
     float horizontal;
     float vertical;
-
+    public int Gameover;
     bool shoot;
     float bulletTimer;
 
@@ -31,10 +31,10 @@ public class PlayerController : MonoBehaviour
 
     {
 
-    
-        GameObject player = GameObject.FindGameObjectWithTag("nocollide");
-        Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>());
-  
+
+        //GameObject player = GameObject.FindGameObjectWithTag("nocollide");
+       // Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+
 
 
         shooter = transform.GetComponentsInChildren<Shooter>();
@@ -51,21 +51,21 @@ public class PlayerController : MonoBehaviour
         shoot = Input.GetKeyDown(KeyCode.Z);
         if (shoot)
         {
-            
+
             StartCoroutine(waitToFire());
-           
+
         }
-     //   if (shoot)
-      //      {
-     //           bulletTimer += Time.deltaTime;
-      //          if (bulletTimer > 0.5f) 
-     //           { 
-     //               shoot.Shoot(); 
-     //               bulletTimer = 0; 
-     //           }
-     // :(
-     //       }
-        
+        //   if (shoot)
+        //      {
+        //           bulletTimer += Time.deltaTime;
+        //          if (bulletTimer > 0.5f) 
+        //           { 
+        //               shoot.Shoot(); 
+        //               bulletTimer = 0; 
+        //           }
+        // :(
+        //       }
+
     }
 
     void FixedUpdate()
@@ -76,22 +76,25 @@ public class PlayerController : MonoBehaviour
 
         rigidbody2d.MovePosition(position);
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        PlayerProjectile projectile = collision.GetComponent<PlayerProjectile>();
-        if (projectile != null)
-        {
-            if (projectile.isEnemy)
-            {
-                Destroy(gameObject);
-            }
-        }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+
+    {
         destructable destructable = collision.GetComponent<destructable>();
         if (destructable != null)
         {
+            SceneManager.LoadScene(1);
             Destroy(gameObject);
-           
         }
     }
+
+
+
+
 }
+
+
+
+    
+
+

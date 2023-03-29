@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 3696729774774505839}
   m_Layer: 0
   m_Name: enemyType2_0
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -208,6 +208,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e57a598ab9136e5408d45837ce108bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 5501465385728659120, guid: 2b9b4e01d5c3c44489d4eb378f683324, type: 3}
+  hp: 3
 --- !u!1 &6027782005209157010
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +229,7 @@ GameObject:
   - component: {fileID: 299273374562554137}
   m_Layer: 0
   m_Name: enemyType2_0 (3)
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -416,6 +418,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e57a598ab9136e5408d45837ce108bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 5501465385728659120, guid: 2b9b4e01d5c3c44489d4eb378f683324, type: 3}
+  hp: 3
 --- !u!1 &6027782005597706222
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,7 +439,7 @@ GameObject:
   - component: {fileID: 4570274259813117588}
   m_Layer: 0
   m_Name: enemyType2_0 (5)
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -624,6 +628,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e57a598ab9136e5408d45837ce108bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 5501465385728659120, guid: 2b9b4e01d5c3c44489d4eb378f683324, type: 3}
+  hp: 3
 --- !u!1 &6027782005735599298
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,7 +649,7 @@ GameObject:
   - component: {fileID: 4437708339483203277}
   m_Layer: 0
   m_Name: enemyType2_0 (2)
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -832,6 +838,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e57a598ab9136e5408d45837ce108bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 5501465385728659120, guid: 2b9b4e01d5c3c44489d4eb378f683324, type: 3}
+  hp: 3
 --- !u!1 &6027782005969089330
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,7 +859,7 @@ GameObject:
   - component: {fileID: 7835690312354862317}
   m_Layer: 0
   m_Name: enemyType2_0 (1)
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1040,6 +1048,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e57a598ab9136e5408d45837ce108bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 5501465385728659120, guid: 2b9b4e01d5c3c44489d4eb378f683324, type: 3}
+  hp: 3
 --- !u!1 &6027782006257022472
 GameObject:
   m_ObjectHideFlags: 0
@@ -1095,7 +1105,7 @@ GameObject:
   - component: {fileID: 9173384600455102635}
   m_Layer: 0
   m_Name: enemyType2_0 (4)
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1284,3 +1294,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e57a598ab9136e5408d45837ce108bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 5501465385728659120, guid: 2b9b4e01d5c3c44489d4eb378f683324, type: 3}
+  hp: 3

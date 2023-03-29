@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 248477641485256983}
   - component: {fileID: 248477641485256981}
   - component: {fileID: 248477641485256982}
+  - component: {fileID: -6245343299459302582}
   m_Layer: 0
   m_Name: enemyType3_0
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -167,6 +168,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &-6245343299459302582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248477641485256971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e57a598ab9136e5408d45837ce108bf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 5501465385728659120, guid: 2b9b4e01d5c3c44489d4eb378f683324, type: 3}
+  hp: 30
 --- !u!1 &1687521151879252482
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,6 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 667555929898636634, guid: 932d8f0e1b87fc04086f257327af29f2, type: 3}
+  autoShoot: 1
 --- !u!1 &2456919331096931945
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,3 +271,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 667555929898636634, guid: 0e070890375e8084a88142f86692bc35, type: 3}
+  autoShoot: 1

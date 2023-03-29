@@ -6,9 +6,9 @@ public class destructable : MonoBehaviour
 {
 
     public GameObject explosion;
+    Score score;
 
-
-    float hp = 10f;
+    [SerializeField] float hp = 10f;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,9 +34,14 @@ public class destructable : MonoBehaviour
                 if (hp == 0)
                 {
 
+                    score = GameObject.FindGameObjectWithTag("score").GetComponent<Score>();
+
+                    score.addScore();
+
                     Destroy(gameObject);
                     Instantiate(explosion, transform.position, Quaternion.identity);
                     Destroy(projectile.gameObject);
+                    
                     // destroys enemy and bullet on hit
                 }
                 else
