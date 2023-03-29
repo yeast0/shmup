@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 7425832655946824577}
   - component: {fileID: 3133240339865754242}
   - component: {fileID: 3696729774774505839}
+  - component: {fileID: 7200820187488994913}
   m_Layer: 0
   m_Name: enemyType2_0
   m_TagString: enemy
@@ -159,7 +160,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -210,6 +211,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 5501465385728659120, guid: 2b9b4e01d5c3c44489d4eb378f683324, type: 3}
   hp: 3
+--- !u!114 &7200820187488994913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6027782004964155632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f823d7a6fb0390247a4b19432234df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gameover: 1
 --- !u!1 &6027782005209157010
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,6 +241,7 @@ GameObject:
   - component: {fileID: 6213089226274162282}
   - component: {fileID: 2160336150146219059}
   - component: {fileID: 299273374562554137}
+  - component: {fileID: 4593851488588451852}
   m_Layer: 0
   m_Name: enemyType2_0 (3)
   m_TagString: enemy
@@ -369,7 +384,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -420,6 +435,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 5501465385728659120, guid: 2b9b4e01d5c3c44489d4eb378f683324, type: 3}
   hp: 3
+--- !u!114 &4593851488588451852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6027782005209157010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f823d7a6fb0390247a4b19432234df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gameover: 1
 --- !u!1 &6027782005597706222
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,6 +465,7 @@ GameObject:
   - component: {fileID: 1826674754097897941}
   - component: {fileID: 767632110521143253}
   - component: {fileID: 4570274259813117588}
+  - component: {fileID: 6977308908547501018}
   m_Layer: 0
   m_Name: enemyType2_0 (5)
   m_TagString: enemy
@@ -579,7 +608,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -630,6 +659,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 5501465385728659120, guid: 2b9b4e01d5c3c44489d4eb378f683324, type: 3}
   hp: 3
+--- !u!114 &6977308908547501018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6027782005597706222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f823d7a6fb0390247a4b19432234df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gameover: 1
 --- !u!1 &6027782005735599298
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,6 +689,7 @@ GameObject:
   - component: {fileID: 4771631238677429793}
   - component: {fileID: 2906021893237131073}
   - component: {fileID: 4437708339483203277}
+  - component: {fileID: 6805017348070285272}
   m_Layer: 0
   m_Name: enemyType2_0 (2)
   m_TagString: enemy
@@ -789,7 +832,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -840,6 +883,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 5501465385728659120, guid: 2b9b4e01d5c3c44489d4eb378f683324, type: 3}
   hp: 3
+--- !u!114 &6805017348070285272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6027782005735599298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f823d7a6fb0390247a4b19432234df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gameover: 1
 --- !u!1 &6027782005969089330
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,6 +913,7 @@ GameObject:
   - component: {fileID: 2228018237434992951}
   - component: {fileID: 4003343789909561725}
   - component: {fileID: 7835690312354862317}
+  - component: {fileID: 1757450496572929327}
   m_Layer: 0
   m_Name: enemyType2_0 (1)
   m_TagString: enemy
@@ -999,7 +1056,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1050,6 +1107,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 5501465385728659120, guid: 2b9b4e01d5c3c44489d4eb378f683324, type: 3}
   hp: 3
+--- !u!114 &1757450496572929327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6027782005969089330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f823d7a6fb0390247a4b19432234df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gameover: 1
 --- !u!1 &6027782006257022472
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,6 +1173,7 @@ GameObject:
   - component: {fileID: 2463923777472399502}
   - component: {fileID: 5918966823623844797}
   - component: {fileID: 9173384600455102635}
+  - component: {fileID: 3180395366913844671}
   m_Layer: 0
   m_Name: enemyType2_0 (4)
   m_TagString: enemy
@@ -1245,7 +1316,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1296,3 +1367,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 5501465385728659120, guid: 2b9b4e01d5c3c44489d4eb378f683324, type: 3}
   hp: 3
+--- !u!114 &3180395366913844671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6027782006803306320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f823d7a6fb0390247a4b19432234df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gameover: 1

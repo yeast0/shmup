@@ -8,6 +8,7 @@ public class explodeEnd : MonoBehaviour
     void Start()
     {
         Destroy(gameObject,1);
+        // destroys the explosion
     }
 
     // Update is called once per frame

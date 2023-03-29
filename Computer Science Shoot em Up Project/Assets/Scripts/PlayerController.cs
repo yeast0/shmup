@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
         {
             shoot.Shoot();
             yield return new WaitForSecondsRealtime(0.2f);
+            // subroutine for the bullet shooting
         }
 
     }
@@ -32,14 +33,14 @@ public class PlayerController : MonoBehaviour
     {
 
 
-        //GameObject player = GameObject.FindGameObjectWithTag("nocollide");
-       // Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>());
-
-
-
         shooter = transform.GetComponentsInChildren<Shooter>();
 
         rigidbody2d = GetComponent<Rigidbody2D>();
+
+
+
+
+
     }
 
     // Update is called once per frame
@@ -55,16 +56,7 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(waitToFire());
 
         }
-        //   if (shoot)
-        //      {
-        //           bulletTimer += Time.deltaTime;
-        //          if (bulletTimer > 0.5f) 
-        //           { 
-        //               shoot.Shoot(); 
-        //               bulletTimer = 0; 
-        //           }
-        // :(
-        //       }
+        
 
     }
 
@@ -74,17 +66,17 @@ public class PlayerController : MonoBehaviour
         position.x = position.x + 3.0f * horizontal * Time.deltaTime;
         position.y = position.y + 3.0f * vertical * Time.deltaTime;
 
+        // updates player position
+
         rigidbody2d.MovePosition(position);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
 
     {
-        destructable destructable = collision.GetComponent<destructable>();
-        if (destructable != null)
+        if (other.CompareTag("enemy"))
         {
-            SceneManager.LoadScene(1);
-            Destroy(gameObject);
+            SceneManager.LoadScene(Gameover);
         }
     }
 

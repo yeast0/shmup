@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4931879465282359132}
   - component: {fileID: 8557164407671669057}
   - component: {fileID: 8472410806123057803}
+  - component: {fileID: 265438667044709079}
   m_Layer: 0
   m_Name: enemyType1_0 (1)
   m_TagString: enemy
@@ -179,7 +180,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -195,6 +196,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.27, y: 0.3}
   m_EdgeRadius: 0
+--- !u!114 &265438667044709079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9003302922997162324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f823d7a6fb0390247a4b19432234df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gameover: 1
 --- !u!1 &9003302923061114913
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,6 +261,7 @@ GameObject:
   - component: {fileID: 1979440724117358277}
   - component: {fileID: 6510399861446454509}
   - component: {fileID: 8326000197626384609}
+  - component: {fileID: 5563202789147502813}
   m_Layer: 0
   m_Name: enemyType1_0 (3)
   m_TagString: enemy
@@ -410,7 +425,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -426,6 +441,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.27, y: 0.3}
   m_EdgeRadius: 0
+--- !u!114 &5563202789147502813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9003302923609563645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f823d7a6fb0390247a4b19432234df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gameover: 1
 --- !u!1 &9003302923908171086
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,6 +470,7 @@ GameObject:
   - component: {fileID: 7214797824095185392}
   - component: {fileID: 6413178062529493779}
   - component: {fileID: 4938411162595937609}
+  - component: {fileID: 8191226513766087684}
   m_Layer: 0
   m_Name: enemyType1_0 (4)
   m_TagString: enemy
@@ -605,7 +634,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -621,6 +650,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.27, y: 0.3}
   m_EdgeRadius: 0
+--- !u!114 &8191226513766087684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9003302923908171086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f823d7a6fb0390247a4b19432234df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gameover: 1
 --- !u!1 &9003302924188506627
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,6 +679,7 @@ GameObject:
   - component: {fileID: 8053187570906389374}
   - component: {fileID: 4367348795914194989}
   - component: {fileID: 3590794550580970269}
+  - component: {fileID: 7901746744626574884}
   m_Layer: 0
   m_Name: enemyType1_0 (5)
   m_TagString: enemy
@@ -800,7 +843,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -816,6 +859,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.27, y: 0.3}
   m_EdgeRadius: 0
+--- !u!114 &7901746744626574884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9003302924188506627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f823d7a6fb0390247a4b19432234df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gameover: 1
 --- !u!1 &9003302924240084965
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,6 +888,7 @@ GameObject:
   - component: {fileID: 7573752863972685089}
   - component: {fileID: 7451959650545820980}
   - component: {fileID: 4192812417841626354}
+  - component: {fileID: 5976333696042435791}
   m_Layer: 0
   m_Name: enemyType1_0
   m_TagString: enemy
@@ -995,7 +1052,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1011,6 +1068,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.27, y: 0.3}
   m_EdgeRadius: 0
+--- !u!114 &5976333696042435791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9003302924240084965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f823d7a6fb0390247a4b19432234df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gameover: 1
 --- !u!1 &9003302924640591502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,6 +1097,7 @@ GameObject:
   - component: {fileID: 7033336809219167999}
   - component: {fileID: 5896615755136031106}
   - component: {fileID: 1020951342223455373}
+  - component: {fileID: 7054750014582065613}
   m_Layer: 0
   m_Name: enemyType1_0 (2)
   m_TagString: enemy
@@ -1190,7 +1261,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1206,3 +1277,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.27, y: 0.3}
   m_EdgeRadius: 0
+--- !u!114 &7054750014582065613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9003302924640591502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f823d7a6fb0390247a4b19432234df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gameover: 1

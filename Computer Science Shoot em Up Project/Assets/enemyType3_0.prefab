@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 248477641485256981}
   - component: {fileID: 248477641485256982}
   - component: {fileID: -6245343299459302582}
+  - component: {fileID: 4753530393581451602}
   m_Layer: 0
   m_Name: enemyType3_0
   m_TagString: enemy
@@ -131,7 +132,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -182,6 +183,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 5501465385728659120, guid: 2b9b4e01d5c3c44489d4eb378f683324, type: 3}
   hp: 30
+--- !u!114 &4753530393581451602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248477641485256971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f823d7a6fb0390247a4b19432234df1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gameover: 1
 --- !u!1 &1687521151879252482
 GameObject:
   m_ObjectHideFlags: 0

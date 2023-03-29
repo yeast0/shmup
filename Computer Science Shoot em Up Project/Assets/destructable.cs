@@ -35,20 +35,23 @@ public class destructable : MonoBehaviour
                 {
 
                     score = GameObject.FindGameObjectWithTag("score").GetComponent<Score>();
+                    // looks for an object with the score tag to take methods from (to increase score)
 
                     score.addScore();
+                    // the aformentioned method
 
                     Destroy(gameObject);
                     Instantiate(explosion, transform.position, Quaternion.identity);
                     Destroy(projectile.gameObject);
                     
-                    // destroys enemy and bullet on hit
+                    // destroys enemy and bullet on hit and creates explosion on enemy death
                 }
                 else
                 {
                     
                     hp = hp - 1;
                     Destroy(projectile.gameObject);
+                    // reduces health of enemy and destroys projectile
                 }
 
             }
